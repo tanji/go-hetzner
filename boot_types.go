@@ -82,3 +82,10 @@ type ActivateLinuxRequest struct {
 	Lang          string   `url:"lang"`
 	AuthorizedKey []string `url:"authorized_key,brackets"`
 }
+
+type ActivateRescueRequest struct {
+	ServerIP      string
+	OS            string   `url:"os"`
+	Arch          int      `url:"arch"`
+	AuthorizedKey []string `url:"authorized_key,brackets"`
+}
