@@ -12,6 +12,10 @@ type BootService interface {
 	GetLinuxConfig(serverIP string) (*Linux, *http.Response, error)
 	ActivateLinux(req *ActivateLinuxRequest) (*Linux, *http.Response, error)
 	DeactivateLinux(serverIP string) (*http.Response, error)
+
+	GetRescueConfig(serverIP string) (*Rescue, *http.Response, error)
+	ActivateRescue(req *ActivateRescueRequest) (*Rescue, *http.Response, error)
+	DeactivateRescue(serverIP string) (*http.Response, error)
 }
 
 type BootServiceImpl struct {
