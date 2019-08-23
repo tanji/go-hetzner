@@ -55,6 +55,7 @@ type Client struct {
 	Server   ServerService
 	SSHKey   SSHKeyService
 	VServer  VServerService
+	Support  SupportService
 }
 
 func NewClient(username, password string) *Client {
