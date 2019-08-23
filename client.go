@@ -74,6 +74,7 @@ func NewClient(username, password string) *Client {
 	c.Server = &ServerServiceImpl{client: c}
 	c.SSHKey = &SSHKeyServiceImpl{client: c}
 	c.VServer = &VServerServiceImpl{client: c}
+	c.Support = &SupportServiceImpl{client: c}
 	return c
 }
 
