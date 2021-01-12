@@ -1,8 +1,9 @@
 package hetzner
 
 type SupportRequest struct {
-	ServerIP string `url:"server_ip"`
-	Type     string `url:"type"`
-	Test     string `url:"test"`
-	Message  string `url:"message"`
+	Type         string `url:"type"`
+	ServerIP     string `url:"server_ip"`
+	ServerNumber int    `url:"server_number"`
+	Downtime     string `url:"30_minutes_test_downtime"`
+	Description  string `url:"description"`
 }
